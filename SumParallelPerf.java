@@ -31,7 +31,7 @@ public class SumParallelPerf{
 		long finalSum = summer.sumNumbers(numberList);
 		//}
 		long seqEndTime = System.currentTimeMillis();
-		System.out.println(seqEndTime - seqStartTime);
+		System.out.println("Value:"+finalSum+" Time:"+(seqEndTime - seqStartTime));
 		
 		//test parallelized sum numbers
 		//be aware of the overhead cost introduced by thread pooling
@@ -41,7 +41,7 @@ public class SumParallelPerf{
 		long finalSumParallel = summer.sumNumbersParallelized(numberList);
 		//}
 		long parEndTime = System.currentTimeMillis();
-		System.out.println(parEndTime - parStartTime);
+		System.out.println("Value:"+finalSumParallel+" Time:"+(parEndTime - parStartTime));
 	}
 	
 	//uses a for loop to sum numbers in the list
