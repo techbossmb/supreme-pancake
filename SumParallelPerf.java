@@ -47,8 +47,8 @@ public class SumParallelPerf{
 	//uses a for loop to sum numbers in the list
 	private long sumNumbers(ArrayList<Long> numberList){
 		long sum = 0;
-		for(Long list:numberList){
-			sum += list;
+		for(Long number:numberList){
+			sum += number;
 		}
 		return sum;
 	}
