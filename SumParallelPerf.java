@@ -57,7 +57,7 @@ public class SumParallelPerf{
 	private long sumNumbersParallelized(ArrayList<Long> numberList){
 		long sum = numberList
 			.parallelStream()
-			.reduce((long)0, Long::sum);
+			.reduce(0L, Long::sum);
 		return sum;
 	}
 	
